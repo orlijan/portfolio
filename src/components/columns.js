@@ -1,15 +1,22 @@
+import { StatusPill } from "./StatusPill";
+
 export const COLUMNS = [
     {//header name accessor sql variable
-        Header: 'Artist',
-        accessor: 'artist'
-    },
-    {
-        Header: 'First Name',
+        Header: 'Card name',
         accessor: 'name'
     },
     {
+        Header: 'colors',
+        accessor: 'colors'
+    },
+    {
         Header: 'rarity',
-        accessor: 'rarity'
+        accessor: 'rarity',
+        Cell: StatusPill,
+    },
+    {
+        Header: 'power',
+        accessor: 'power'
     },
     {
         Header: 'toughness',
@@ -17,7 +24,7 @@ export const COLUMNS = [
     },
     {
         Header: 'type',
-        accessor: 'type',
+        accessor: 'type'
         
     },
 ]
