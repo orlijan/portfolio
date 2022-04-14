@@ -16,10 +16,6 @@ export const COLUMNS = [
         accessor: 'toughness'
     },
     {
-        Header: 'text',
-        accessor: 'originalText'
-    },
-    {
         Header: 'type',
         accessor: 'type',
         

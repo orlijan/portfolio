@@ -2,7 +2,6 @@ import React, {useMemo} from 'react'
 import {useTable, usePagination,useSortBy,useGlobalFilter} from 'react-table'
 import MOCK_DATA from './NEO.json'
 import {COLUMNS} from './columns'
-import './table.css'
 import { GlobalFilter } from './GlobalFilter'
 export const PaginationTable = () =>{
     //usememo 
