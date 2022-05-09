@@ -4,13 +4,13 @@ const About = () => {
   return (
     <>
     
-      <div className=" h-full min-h-screen  flex grow bg-gradient-to-t flex-col justify-center items-center  divide-y divide-dashed divide-zinc-600">
+      <div className=" h-full min-h-screen   flex grow bg-gradient-to-t flex-col justify-center items-center  divide-y divide-dashed divide-zinc-600">
         <img
           class="w-64 h-64 drop-shadow-3xl m-8 rounded-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 "
           src={profile}
           alt="Rounded avatar"
         />
-        <p class="text-xl font-light p-8 hover:drop-shadow-4xl leading-loose translate-x-6  flex-auto m-7 max-w-3xl text-gray-800 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-100 ">
+        <p class="text-xl font-light p-8 backdrop-blur-sm hover:drop-shadow-4xl leading-loose translate-x-6  flex-auto m-7 max-w-3xl text-gray-800 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-100 ">
           Hello! Thanks for looking at my website! I'm Leijan Legaspi and I like
           being creative. I have a degree in computer science and have taken
           multiple graphic design courses. This website was made with

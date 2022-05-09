@@ -16,11 +16,10 @@ function App() {
   return (
     <Router>
     
-      <body className=" bg-[url(./components/images/background.jpg)] bg-local  h-full min-h-screen ">
+      <body className=" bg-[url(./components/images/background.jpg)] bg-cover  h-full min-h-screen ">
         <Navbar />
         <Switch>
         <Route path="/" exact component={Home}>
-            
           </Route>
           <Route path="/about">
             <About />
