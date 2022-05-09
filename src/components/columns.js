@@ -1,57 +1,42 @@
 import { StatusPill } from "./StatusPill";
-
+import { ColumnFilter } from "./ColumnFilter";
 export const COLUMNS = [
     {//header name accessor sql variable
         Header: 'Card name',
-        accessor: 'name'
+        accessor: 'name',
+        Filter: ColumnFilter,
     },
     {
         Header: 'colors',
-        accessor: 'colors'
+        accessor: 'colors',
+        Filter: ColumnFilter,
     },
     {
         Header: 'rarity',
         accessor: 'rarity',
         Cell: StatusPill,
+        Filter: ColumnFilter,
     },
     {
         Header: 'power',
-        accessor: 'power'
+        accessor: 'power',
+        Filter: ColumnFilter,
     },
     {
         Header: 'toughness',
-        accessor: 'toughness'
+        accessor: 'toughness',
+        Filter: ColumnFilter,
     },
     {
         Header: 'type',
-        accessor: 'type'
+        accessor: 'type',
+        Filter: ColumnFilter,
         
     },
+    {
+        Header: 'set',
+        accessor: 'setCode',
+        Filter: ColumnFilter,
+    }
+    
 ]
-
-// export const COLUMNS = [
-//     {//header name accessor sql variable
-//         Header: 'Id',
-//         accessor: 'id'
-//     },
-//     {
-//         Header: 'First Name',
-//         accessor: 'first_name'
-//     },
-//     {
-//         Header: 'Last Name',
-//         accessor: 'last_name'
-//     },
-//     {
-//         Header: 'Date of Birth',
-//         accessor: 'date_of_birth'
-//     },
-//     {
-//         Header: 'Country',
-//         accessor: 'country'
-//     },
-//     {
-//         Header: 'Phone',
-//         accessor: 'phone'
-//     },
-// ]
