@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import Database from "./pages/database";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
-
+import Bulletjournal from "./pages/bulletjournal";
 
 function App() {
   return (
@@ -21,15 +21,18 @@ function App() {
         <Switch>
         <Route path="/" exact component={Home}>
           </Route>
-          <Route path="/about">
+        <Route path="/about">
             <About />
-          </Route>
-          <Route path="/projects">
+        </Route>
+        <Route path="/projects">
             <Projects />
-          </Route>
-          <Route path="/database">
+        </Route>
+         <Route path="/database">
             <Database />
-          </Route>
+        </Route>
+        <Route path="/bulletjournal">
+            <Bulletjournal />
+        </Route>
         </Switch>
         
       </body>

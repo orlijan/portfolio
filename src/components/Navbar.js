@@ -18,13 +18,13 @@ const Navbar = () => {
         <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/about">About</Link>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
       </li>
     </ul>
 </div>
@@ -32,6 +32,7 @@ const Navbar = () => {
             <Link className="navButton  " to="/about">About</Link>
             <Link className="navButton " to="/projects">Projects</Link>
             <Link className="navButton" to="/database">Database</Link>
+            <Link className="navButton" to="/bulletjournal">Bullet journal</Link>
             </div>
             </nav>
             
