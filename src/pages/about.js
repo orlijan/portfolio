@@ -10,7 +10,7 @@ const About = () => {
           src={profile}
           alt="Rounded avatar"
         />
-        <p class="text-xl font-light p-8 backdrop-blur-sm hover:drop-shadow-4xl leading-loose translate-x-6  flex-auto m-7 max-w-3xl text-gray-800 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-100 ">
+        <p class="text-xl font-light p-8 backdrop-blur-sm hover:drop-shadow-4xl leading-loose translate-x-6  flex-auto m-7 max-w-3xl text-gray-800  hover:-translate-y-1 hover:scale-110  duration-100 ">
           Hello! Thanks for looking at my website! I'm Leijan Legaspi and I like
           being creative. I have a degree in computer science and have taken
           multiple graphic design courses. This website was made with

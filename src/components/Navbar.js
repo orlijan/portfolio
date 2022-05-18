@@ -6,8 +6,8 @@ const Navbar = () => {
       <>
       <script src="../path/to/flowbite/dist/flowbite.js"></script>
 
-          <nav className="flex backdrop-blur-sm justify-between items-center h-16   relative shadow-sm font-light">
-            <Link className="p-4 pl-8 active:text-indigo-600  hover:bounce" to="/">Leijan Legaspi</Link>
+          <nav className="flex  justify-between items-center h-16   relative shadow-sm font-light">
+            <Link className="p-4 pl-8 active:text-indigo-600  hover:bounce" to="/portfolio">Leijan Legaspi</Link>
             <div className="pr-8 font-normal ">
             <button id="dropdownDefault" data-dropdown-toggle="dropdown" class=" font-light hover:underline underline-offset-8  px-4 py-2.5 text-center inline-flex items-center " type="button">Dropdown button <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
 
@@ -18,13 +18,13 @@ const Navbar = () => {
         <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/about">About</Link>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
       </li>
     </ul>
 </div>
@@ -32,6 +32,7 @@ const Navbar = () => {
             <Link className="navButton  " to="/about">About</Link>
             <Link className="navButton " to="/projects">Projects</Link>
             <Link className="navButton" to="/database">Database</Link>
+            <Link className="navButton" to="/bulletjournal">Bullet journal</Link>
             </div>
             </nav>
             
