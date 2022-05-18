@@ -58,8 +58,8 @@ export const PaginationTable = () => {
                 <thead className="bg-gray-50">
                   {headerGroups.map((headerGroup) => (
                     <tr {...headerGroup.getHeaderGroupProps()}>
-                      {headerGroup.headers.map((column) => (
-                        <th className="px-1 py-1 text-left text-xs font-medium text-gray-500 uppercase tracking-wide select-none"
+                      {headerGroup.headers.map((column) => (//px-1 py-1
+                        <th className=" text-left text-xs font-medium text-gray-500 uppercase tracking-wide select-none"
                           {...column.getHeaderProps(
                              column.getSortByToggleProps()
                             )}>
@@ -79,10 +79,10 @@ export const PaginationTable = () => {
                     return (
                       <tr {...row.getRowProps()}>
                         {
-                          //gives aceess to the individual row cell
+                          //gives aceess to the individual row cell px-6-py-4
                           row.cells.map((cell) => {
                             return (
-                              <td {...cell.getCellProps} className="px-6 py-4 ">
+                              <td {...cell.getCellProps} className="">
                                 {cell.render("Cell")}
                               </td>
                             );

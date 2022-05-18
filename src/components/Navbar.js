@@ -6,7 +6,7 @@ const Navbar = () => {
       <>
       <script src="../path/to/flowbite/dist/flowbite.js"></script>
 
-          <nav className="flex backdrop-blur-sm justify-between items-center h-16   relative shadow-sm font-light">
+          <nav className="flex  justify-between items-center h-16   relative shadow-sm font-light">
             <Link className="p-4 pl-8 active:text-indigo-600  hover:bounce" to="/">Leijan Legaspi</Link>
             <div className="pr-8 font-normal ">
             <button id="dropdownDefault" data-dropdown-toggle="dropdown" class=" font-light hover:underline underline-offset-8  px-4 py-2.5 text-center inline-flex items-center " type="button">Dropdown button <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>

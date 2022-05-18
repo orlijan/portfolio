@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react'
 import React, { Component} from 'react'
-import TaskList from '../components/journalcomponents/TaskList';
-import Loader from '../components/journalcomponents/Loader';
+
 
 
 const Bulletjournal = () => {
