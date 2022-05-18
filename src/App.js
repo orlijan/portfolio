@@ -19,7 +19,7 @@ function App() {
       <body className=" bg-[url(./components/images/background.jpg)] bg-cover  h-full min-h-screen ">
         <Navbar />
         <Switch>
-        <Route path="/" exact component={Home}>
+        <Route path="/portfolio" exact component={Home}>
           </Route>
         <Route path="/about">
             <About />
