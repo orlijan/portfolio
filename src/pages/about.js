@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
     
-      <div className=" h-full min-h-screen   flex grow bg-gradient-to-t flex-col justify-center items-center  divide-y divide-dashed divide-zinc-600">
+      <div className=" h-full min-h-screen bg-black  flex grow bg-gradient-to-t flex-col justify-center items-center  divide-y divide-dashed divide-zinc-600">
         <img
           class="w-64 h-64 drop-shadow-3xl m-8 rounded-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 "
           src={profile}
