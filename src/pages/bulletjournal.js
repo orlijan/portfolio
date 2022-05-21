@@ -1,18 +1,18 @@
-import { render } from '@testing-library/react'
-import React, { Component} from 'react'
+// import { render } from '@testing-library/react'
+// import React, { Component} from 'react'
 
 
 
-const Bulletjournal = () => {
+// const Bulletjournal = () => {
     
-  return (
+//   return (
     
-      <div className='h-screen flex justify-center items-center'>
-          <h1 className=''>This is the journal page with</h1>
+//       <div className='h-screen flex justify-center items-center'>
+//           <h1 className=''>This is the journal page with</h1>
           
           
-      </div>
-    );
-}
+//       </div>
+//     );
+// }
 
-export default Bulletjournal
+// export default Bulletjournal

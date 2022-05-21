@@ -11,12 +11,13 @@ import Database from "./pages/database";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Bulletjournal from "./pages/bulletjournal";
-
+import Contact from "./pages/contact";
+//bg-[url(./components/images/background.jpg)] bg-cover 
 function App() {
   return (
     <Router>
     
-      <body className=" bg-[url(./components/images/background.jpg)] bg-cover  h-full min-h-screen ">
+      <body className="bg-teal-50  h-full min-h-screen ">
         <Navbar />
         <Switch>
         <Route path="/portfolio" exact component={Home}>
@@ -30,8 +31,12 @@ function App() {
          <Route path="/database">
             <Database />
         </Route>
-        <Route path="/bulletjournal">
+        {/* <Route path="/bulletjournal">
             <Bulletjournal />
+        </Route> */}
+
+        <Route path="/contact">
+          <Contact />
         </Route>
         </Switch>
         

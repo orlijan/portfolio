@@ -6,7 +6,7 @@ const Database = () => {
       
       // <div className="bg-gray-100 text-gray-900 motion-safe:animate-fadeIn">
       // <main className="   px-4 sm:px-6 lg:px-8 pt-">
-        <div className="">
+        <div className=" px-4 sm:px-6 lg:px-8">
           <PaginationTable/>
         </div>
         
