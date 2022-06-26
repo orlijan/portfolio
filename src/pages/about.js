@@ -1,20 +1,35 @@
 import React from "react";
 import profile from "../components/images/profile.jpg";
+import JuicerFeed from "react-juicer-feed";
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://assets.juicer.io/embed.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <>
-{/*     
-      <div className=" h-full min-h-screen   bg-gradient-to-t flex-col justify-center items-center   ">
-        <header className="text-xl flex-auto shrink">Hello! Thanks for looking at my website!</header>
-        
-        <h1>interest</h1>
-        <p class="text-xl font-light p-8 backdrop-blur-sm hover:drop-shadow-4xl leading-loose translate-x-6  flex-auto m-7 max-w-3xl text-gray-800  hover:-translate-y-1 hover:scale-110  duration-100 ">
-         
-          
-        </p>
-        
-      </div> */}
-      
+      <body>
+        <link
+          href="https://assets.juicer.io/embed.css"
+          media="all"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <ul class="juicer-feed" data-feed-id="leijanlegaspi">
+          <h1 class="referral">
+            <a href="https://www.juicer.io"></a>
+          </h1>
+        </ul>
+      </body>
     </>
   );
 };

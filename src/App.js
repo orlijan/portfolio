@@ -12,12 +12,19 @@ import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Bulletjournal from "./pages/bulletjournal";
 import Contact from "./pages/contact";
+import Aos from 'aos';
+import { useEffect } from "react";
+import "aos/dist/aos.css"
 //bg-[url(./components/images/background.jpg)] bg-cover 
 function App() {
+
+  
   return (
     <Router>
     
-      <body className="bg-teal-50  h-full min-h-screen ">
+      {/* <body className="bg-lbrown  h-full min-h-screen "> */}
+      <body className=" h-full min-h-screen ">
+
         <Navbar />
         <Switch>
         <Route path="/portfolio" exact component={Home}>

@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .Title{
-  @apply 
-  /* text-2xl
-  leading-none
-  hover:leading-7
-  font-bold
-  uppercase */
-  /* px-8
-  py-4 */
-
-
 .text{
   @apply 
   text-gray-500
@@ -26,4 +15,91 @@
   underline-offset-8 
   font-light
 
+}
+
+
+p {
+  color: #889872;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* h1{
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  border: 3px solid green ;
+  padding: 10px;
+} */
+.title{
+  @apply
+  flex
+  justify-center 
+  items-center 
+  min-h-screen
+  text-4xl
+  scroll-smooth
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.leftslide {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+
+  padding: 30px;
+}
+h6{
+font-size: small;
+}
+
+
+
+
+
+
+
+
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(90deg, #efe4d0 50%, #BCCDB6 50% );
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:12s;
+}
+
+.bg3 {
+  animation-duration:10s;
+}
+.bg4{
+  animation-direction: alternate-reverse;
+  animation-duration:20;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-20%);
+  }
+  100% {
+    transform:translateX(20%);
+  }
 }

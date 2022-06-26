@@ -2,6 +2,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
+      colors: {
+        'lbrown': '#efe4d0',
+        'lgreen': '#889872',
+      },
       animation: {
         fadeIn: "fadeIn 2s ease-in forwards",
       },
@@ -20,7 +24,12 @@ module.exports = {
       ]
     }
   },
-  plugins: [require("@tailwindcss/typography"), require("flowbite/plugin")],
+  plugins: [
+    require("@tailwindcss/typography"), 
+    require("flowbite/plugin"),
+  
+  ],
+    
   variants: {
     animation: ["motion-safe"],
   },

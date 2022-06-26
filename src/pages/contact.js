@@ -5,7 +5,9 @@ const Contact = () => {
       <div className='h-screen flex justify-center items-center'>
           
           <a href={Pdf} target="_blank"> Download Pdf</a>
+          
       </div>
+      
     )
 }
 
