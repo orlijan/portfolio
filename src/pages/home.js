@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import profile from "../components/images/profile.jpg";
+import tasktracker from "../components/images/tasktracker.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -20,7 +21,7 @@ const Home = () => {
     //   src={profile}
     //   alt="Rounded avatar"
     // />
-    //     <div className="">
+    //     <div >
     //       {/* <p class="text-xl  font-light p-8 hover:drop-shadow-4xl leading-loose translate-x-6  flex-auto  max-w-3xl text-gray-800  hover:-translate-y-1 hover:scale-100  duration-100 "> */}
     //       <p class="text-sm font-light p-2 hover:drop-shadow-4xl  flex-auto max-w-3xl  ">
     //         I'm Leijan Legaspi and I like being creative. I have a degree in
@@ -50,24 +51,24 @@ const Home = () => {
     //     <div></div>
     //   </div>  </>
     <>
-      <div className="grid place-items-center  ">
-      <div class="bg"></div>
-        <div className="bg bg2 h-screen w-screen"><div class="bg bg3 h-screen w-screen"></div></div>
-        
-        <div class="bg bg4"></div>
+      <div class="backg"></div>
+      <div class="backg bg2"></div>
+      <div class="backg bg3"></div>
+
+      {/* <div className="container">
+      
+        <div >
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          className="title"
-        >
-          <h6>Hi</h6>
-          <h1>I am a</h1>
+          >
+          
+          <header >Hello</header>
+          <article >this is supposed to be the article of the thi8ng. al;sdkfjasldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfkjads;lfkjs</article>
         </div>
-        <div className="title leftslide flex-row">
-          <div>1</div>
-          <div>1</div>
-
-          <div>1</div>
+        <div className="" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+          <p>My name is Leijan Legaspi</p>
+          
           <img
             class="object-scale-down h-20 w-20 drop-shadow-3xl m-8 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-100   motion-safe:animate-fadeIn "
             src={profile}
@@ -75,29 +76,126 @@ const Home = () => {
         </div>
         <div
           data-aos="fade-left"
-          data-aos-anchor-placement="center-center"
-          className="title"
+          data-aos-anchor-placement="center-bottom"
+          className="title text-left "
         >
-          I am Leijan Legaspi
+          <header > About me </header>
+          <div><header>hello</header>
+          <article>
+            <h2>
+              <p></p>
+            </h2>
+          </article>
+          </div>
+          
         </div>
+        <p className="text-lg">My name is Leijan Legaspi and I enjoy making web applications. I graduated from Sacramento State University
+            with a bachelor's degree in computer science.
+          </p>
         <div
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
           className="title"
         >
+          
           I like making websites
           <ul class="list-disc columns-3 text-sm  marker:text-lgreen list-inside">
-            <li className="">React</li>
-            <li className="">Node.js</li>
-            <li className="">Javascript</li>
-            <li className="">React Tables</li>
-            <li className="">R</li>
-            <li className="">Android Studio</li>
-            <li className="">Adobe xd</li>
-            <li className="">Photoshop</li>
-            <li className="">Jquery</li>
+            <li >React</li>
+            <li >Node.js</li>
+            <li >Javascript</li>
+            <li >React Tables</li>
+            <li >R</li>
+            <li >Android Studio</li>
+            <li >Adobe xd</li>
+            <li >Photoshop</li>
+            <li >Jquery</li>
           </ul>
         </div>
+      </div>
+      </div>
+    
+     */}
+
+      <div className="container">
+        <div className=" pt-28 pb-16">
+          <div className="box  justify-self-center  motion-safe:animate-fadeIn  ">
+            <h3 className="text-lbrown font-mono">Hi, My name is</h3>
+            <header>
+              Leijan Legaspi.<br></br> 
+            </header>
+            <p className="font-medium">I like to make things.</p>
+          </div>
+        </div>
+
+        
+        <div 
+          data-aos="fade-left"
+          data-aos-anchor-placement="bottom-bottom"
+          className="box bg-ltan rounded-2xl"id="aboutme"
+        >
+          <header  className="">About me</header>
+          <div className="flex" >
+            <div className="pr-9 overflow-auto">
+              <p className="text-sm">
+                Hello, my name is Leijan Legaspi. I have a bachelors degree in
+                computer science from Sacramento State University. My interest
+                started with my interactions with videogames. I was interested
+                how menu systems, logos, and how player feedback worked. I also
+                have an interest in graphic design, taking a few courses which
+                had helped me improve my skills in front end websites and user
+                experiences. Outside of developing websites, my main hobbies are
+                photography, cooking, and Magic The Gathering.
+              </p> 
+            </div>
+            <div>
+              
+
+
+
+            </div>
+            <img
+              class="w-22 h-24 drop-shadow-3xl  rounded-full transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-100   motion-safe:animate-fadeIn "
+              src={profile}
+              alt="Rounded avatar"
+            />
+          </div>
+        </div>
+        <div>Check out my Instagram or view my photos</div>
+        <div
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          className="box "
+        >
+          <header>Projects</header>
+          <p>Here is a list of projects I have created.</p>
+        </div>
+        <div>
+        
+
+        </div>
+
+        <div id="projects"className="box" >
+          <header>Projects</header>
+          <div className="flex"><header>Task-Tracker</header>
+          <p>This app was inspired by my friends who wanted a simple task manager, usable as a mobile application</p>
+          <img className="object-scale-down h-48 w-96 " src={tasktracker} alt="..."></img>
+          </div>
+          <div><header>Magic the Gathering Database Lookup</header>
+          <p>This applet helps user identify current Magic the Gathering cards by typing card information such
+            as Card name, Mana cost, color identity, or even by rarity, in a datagrid
+          </p>
+          <p>I used the React Table api to set up the structure, and tailwind to customize and decorate user interface</p>
+          </div>
+          <div><header>Wikipedia Web Scraper</header>
+          <p>A webscraper that fetches all the p tags in a wikipedia page and displays them</p></div>
+          <div><header>Litho Overhaul</header></div>
+        </div>
+
+        <div><header>Contact me</header>
+        <p>You can reach me through my email at</p>
+        <a href="mailto:leijanlegaspi@csus.edu">leijanlegaspi@csus.edu</a><br></br>
+        or <br></br>
+        <a href="mailto:leijanlegaspi@gmail.com">leijanlegaspi@gmail.com</a> </div>
       </div>
     </>
   );

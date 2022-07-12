@@ -12,6 +12,7 @@
     "classnames": "^2.3.1",
     "flowbite": "^1.4.4",
     "instagram-basic-display": "^1.0.3",
+    "mtgsdk": "^1.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-juicer-feed": "^0.0.2-alpha-4",

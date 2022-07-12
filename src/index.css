@@ -16,33 +16,53 @@
   font-light
 
 }
-
+.box{
+  @apply
+  m-9 
+  p-9 
+  w-auto 
+  box-border
+  bg-ltan 
+  rounded-2xl
+}
+html {
+  scroll-behavior: smooth;
+}
 
 p {
-  color: #889872;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+  color: #74583c;
+  font-family:  Helvetica,Arial, sans-serif;
 }
 
 header{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:  Helvetica,Arial, sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #74583c;
+  position: relative;
+  
+  
 }
 
-/* h1{
+h1{
   margin: auto;
   text-align: center;
   width: 50%;
   height: auto;
-  border: 3px solid green ;
   padding: 10px;
-} */
+}
 .title{
   @apply
-  flex
+
   justify-center 
   items-center 
-  min-h-screen
-  text-4xl
+  h-screen
   scroll-smooth
+}
+h3{
+  
+  color: #74583c;
 }
 
 @keyframes slideInFromLeft {
@@ -66,7 +86,7 @@ font-size: small;
 
 
 
-
+/* 
 
 
 
@@ -74,7 +94,7 @@ font-size: small;
 
 .bg {
   animation:slide 5s ease-in-out infinite alternate;
-  background-image: linear-gradient(90deg, #efe4d0 50%, #BCCDB6 50% );
+  background-image: linear-gradient(45deg, #efe4d0 50%, #BCCDB6 50% );
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -101,5 +121,73 @@ font-size: small;
   }
   100% {
     transform:translateX(20%);
+  }
+} */
+
+
+.backg {
+  animation:slide 25s ease-in-out infinite alternate;
+  background-image: linear-gradient(45deg, #efe4d0 50%, #BCCDB6 50% );
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:30s;
+}
+
+.bg3 {
+  animation-duration:28s;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+/* .container{
+  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 7%;
+    grid-row-gap: 2%;
+    justify-items: stretch;
+    align-items: stretch;
+} */
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
   }
 }

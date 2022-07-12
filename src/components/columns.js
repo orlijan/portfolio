@@ -44,21 +44,13 @@ export const COLUMNS = [
           ),
         Filter: ColumnFilter,
     },
-    // {
-    //     Header: 'toughness',
-    //     accessor: 'toughness',
-    //     Filter: ColumnFilter,
-    // },
+   
     {
         Header: 'type',
         accessor: 'type',
         Filter: ColumnFilter,
         
     },
-    {
-        Header: 'set',
-        accessor: 'setCode',
-        Filter: ColumnFilter,
-    }
+   
     
 ]

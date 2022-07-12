@@ -18,6 +18,9 @@ const About = () => {
   return (
     <>
       <body>
+        <div className=" px-3 bg-ltan">
+          <div className="box"> <p className=""> Here is a gallery from my instagram with the help of the juicer.io api</p></div>
+        
         <link
           href="https://assets.juicer.io/embed.css"
           media="all"
@@ -29,6 +32,7 @@ const About = () => {
             <a href="https://www.juicer.io"></a>
           </h1>
         </ul>
+        </div>
       </body>
     </>
   );

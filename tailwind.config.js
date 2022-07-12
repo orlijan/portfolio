@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'lbrown': '#efe4d0',
+        'lbrown': '#74583c',
         'lgreen': '#889872',
+        'ltan' : '#efe4d0',
       },
       animation: {
         fadeIn: "fadeIn 2s ease-in forwards",

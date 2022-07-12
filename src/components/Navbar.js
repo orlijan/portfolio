@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="pr-8 font-normal ">
             <button id="dropdownDefault" data-dropdown-toggle="dropdown" class=" font-light hover:underline underline-offset-8  px-4 py-2.5 text-center inline-flex items-center " type="button">Projects <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
 
-<div id="dropdown" class="z-10 hidden bg-emerald-50 divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+<div id="dropdown" class="z-10 hidden bg-ltan divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
     <ul class="py-1 text-sm dark:text-gray-200" aria-labelledby="dropdownDefault">
       <li>
         {/* <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a> */}
@@ -21,7 +21,7 @@ const Navbar = () => {
       <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/database">MTG database</Link>
       </li>
       <li>
-        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/about">Instagram Gallery</Link>
       </li>
       <li>
         <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
@@ -29,10 +29,12 @@ const Navbar = () => {
     </ul>
 </div>
             
-            <Link className="navButton  " to="/about">About</Link>
+            {/* <Link className="navButton  " to="/about">About</Link>
             <Link className="navButton " to="/projects">Projects</Link>
             <Link className="navButton" to="/database">Database</Link>
-            <Link className="navButton" to="/contact">Contact</Link>
+            <Link className="navButton" to="/contact">Contact</Link> */}
+            <a className="p-2" href="#aboutme">About me</a>
+            <a className="p-2" href="#projects">Projects</a>
             {/* <Link className="navButton" to="/bulletjournal">Bullet journal</Link> */}
             </div>
             </nav>

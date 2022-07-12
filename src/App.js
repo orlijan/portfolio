@@ -23,7 +23,7 @@ function App() {
     <Router>
     
       {/* <body className="bg-lbrown  h-full min-h-screen "> */}
-      <body className=" h-full min-h-screen ">
+      <body className=" ">
 
         <Navbar />
         <Switch>
