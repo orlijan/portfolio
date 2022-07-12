@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9292b57f.css",
-    "main.js": "/portfolio/static/js/main.d0725352.js",
+    "main.css": "/portfolio/static/css/main.39fe9142.css",
+    "main.js": "/portfolio/static/js/main.f6692333.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/background.jpg": "/portfolio/static/media/background.bff714aadcae024c4ac0.jpg",
-    "static/media/profile.jpg": "/portfolio/static/media/profile.1d66389ca1a171155201.jpg",
+    "static/media/instagram.png": "/portfolio/static/media/instagram.c66db8b8878866988265.png",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.02a2e8117d9f32f6df25.jpg",
+    "static/media/mtg.png": "/portfolio/static/media/mtg.dfa0ceb5942cad76cd2e.png",
+    "static/media/LeijanLegaspiResume.pdf": "/portfolio/static/media/LeijanLegaspiResume.1e24be7a4443a737a6d1.pdf",
+    "static/media/tasktracker.png": "/portfolio/static/media/tasktracker.7ffed92d8e92599f19ff.png",
+    "static/media/tradelitho.png": "/portfolio/static/media/tradelitho.ce4b05b20ef2b204aad3.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.9292b57f.css.map": "/portfolio/static/css/main.9292b57f.css.map",
-    "main.d0725352.js.map": "/portfolio/static/js/main.d0725352.js.map",
+    "main.39fe9142.css.map": "/portfolio/static/css/main.39fe9142.css.map",
+    "main.f6692333.js.map": "/portfolio/static/js/main.f6692333.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9292b57f.css",
-    "static/js/main.d0725352.js"
+    "static/css/main.39fe9142.css",
+    "static/js/main.f6692333.js"
   ]
 }
