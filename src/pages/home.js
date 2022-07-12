@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import profile from "../components/images/profile.jpg";
-import tasktracker from "../components/images/tasktracker.png"
+import tasktracker from "../components/images/tasktracker.png";
 import Aos from "aos";
+import lithooverhaul from "../components/images/tradelitho.png";
 import "aos/dist/aos.css";
-
+import mtg from "../components/images/mtg.png"
+import { Link } from "react-router-dom";
+import insta from "../components/images/instagram.png";
 import "../index.css";
 const Home = () => {
   useEffect(() => {
@@ -121,38 +124,33 @@ const Home = () => {
           <div className="box  justify-self-center  motion-safe:animate-fadeIn  ">
             <h3 className="text-lbrown font-mono">Hi, My name is</h3>
             <header>
-              Leijan Legaspi.<br></br> 
+              Leijan Legaspi.<br></br>
             </header>
-            <p className="font-medium">I like to make things.</p>
+            <p className="font-medium">I like to make websites.</p>
           </div>
         </div>
 
-        
-        <div 
+        <div
           data-aos="fade-left"
           data-aos-anchor-placement="bottom-bottom"
-          className="box bg-ltan rounded-2xl"id="aboutme"
+          className="box bg-ltan rounded-2xl"
+          id="aboutme"
         >
-          <header  className="">About me</header>
-          <div className="flex" >
+          <header className="">About me</header>
+          <div className="flex">
             <div className="pr-9 overflow-auto">
               <p className="text-sm">
                 Hello, my name is Leijan Legaspi. I have a bachelors degree in
                 computer science from Sacramento State University. My interest
-                started with my interactions with videogames. I was interested
+                started with my interactions with web pages and videogames. I was interested
                 how menu systems, logos, and how player feedback worked. I also
                 have an interest in graphic design, taking a few courses which
                 had helped me improve my skills in front end websites and user
                 experiences. Outside of developing websites, my main hobbies are
-                photography, cooking, and Magic The Gathering.
-              </p> 
+                photography which you can check out in the projects menu, cooking, and Magic The Gathering.
+              </p>
             </div>
-            <div>
-              
-
-
-
-            </div>
+            <div></div>
             <img
               class="w-22 h-24 drop-shadow-3xl  rounded-full transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-100   motion-safe:animate-fadeIn "
               src={profile}
@@ -160,42 +158,77 @@ const Home = () => {
             />
           </div>
         </div>
-        <div>Check out my Instagram or view my photos</div>
-        <div
-          data-aos="fade-left"
-          data-aos-anchor-placement="top-center"
-          className="box "
-        >
-          <header>Projects</header>
-          <p>Here is a list of projects I have created.</p>
-        </div>
-        <div>
         
 
-        </div>
-
-        <div id="projects"className="box" >
+        <div id="projects" className="box">
           <header>Projects</header>
-          <div className="flex"><header>Task-Tracker</header>
-          <p>This app was inspired by my friends who wanted a simple task manager, usable as a mobile application</p>
-          <img className="object-scale-down h-48 w-96 " src={tasktracker} alt="..."></img>
+          <div
+            data-aos="fade-left"
+            data-aos-anchor-placement="bottom-bottom"
+            className="flex-col"
+          >
+            <header>Task-Tracker</header>
+            
+            <p className="p-2">
+              A task tracking application that displays typed entries.
+            </p>
+            <a href="https://orlijan.github.io/react-task-tracker/">
+            <img 
+              className="object-scale-down h-48 w-96 "
+              src={tasktracker}
+              alt="..."
+            ></img></a>
           </div>
-          <div><header>Magic the Gathering Database Lookup</header>
-          <p>This applet helps user identify current Magic the Gathering cards by typing card information such
-            as Card name, Mana cost, color identity, or even by rarity, in a datagrid
-          </p>
-          <p>I used the React Table api to set up the structure, and tailwind to customize and decorate user interface</p>
+          <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+            <header>Magic the Gathering Database Lookup</header>
+            <p className="p-2">
+              
+              A table that helps users identify current Magic the Gathering cards
+              by typing card information such as Card name, Mana cost, color
+              identity, or rarity.
+            </p>
+            
+            <Link  to="/database"><img className="object-scale-down transition ease-in-out h-48 w-96 hover:-translate-y-1 " src={mtg}></img></Link>
+
+            
           </div>
-          <div><header>Wikipedia Web Scraper</header>
-          <p>A webscraper that fetches all the p tags in a wikipedia page and displays them</p></div>
-          <div><header>Litho Overhaul</header></div>
+         
+          <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+            <header>Litho Overhaul</header>
+            <p className="p-2">My senior project that we were assigned to relaunch and modernize our sponsor's company website.</p>
+            <a href="https://xd.adobe.com/view/0f8b4f62-076b-4c45-a741-5fc1129476f5-5ad8/grid"><img className="object-scale-down h-48 w-96" src={lithooverhaul}></img></a>
+          </div>
+          <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+            <header>Instagram wall</header>
+            <p className="p-2">
+              implemented juicer.io token authentication to embed my instagram
+              photos to this website.
+            </p>
+            <Link  to="/about"><img className="object-scale-down transition ease-in-out h-48 w-96 hover:-translate-y-1 " src={insta}></img></Link>
+          </div>
+          <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+            <header>Wikipedia Web Scraper</header>
+            <p>
+              A webscraper that fetches all the p tags in a wikipedia page and
+              displays them
+            </p>
+          </div>
         </div>
 
-        <div><header>Contact me</header>
-        <p>You can reach me through my email at</p>
-        <a href="mailto:leijanlegaspi@csus.edu">leijanlegaspi@csus.edu</a><br></br>
-        or <br></br>
-        <a href="mailto:leijanlegaspi@gmail.com">leijanlegaspi@gmail.com</a> </div>
+        <div
+          data-aos="fade-left"
+          data-aos-anchor-placement="bottom-bottom"
+          className="box"
+        >
+          <header>Contact me</header>
+          <p>You can reach me through my email at</p>
+          <a href="mailto:leijanlegaspi@csus.edu">leijanlegaspi@csus.edu</a>
+          <br></br>
+          <p>or</p>
+          <a href="mailto:leijanlegaspi@gmail.com">
+            leijanlegaspi@gmail.com
+          </a>{" "}
+        </div>
       </div>
     </>
   );

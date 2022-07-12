@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Pdf from '../components/resume/LeijanLegaspiResume.pdf'
 const Navbar = () => {
   return (
       <>
@@ -15,7 +15,7 @@ const Navbar = () => {
     <ul class="py-1 text-sm dark:text-gray-200" aria-labelledby="dropdownDefault">
       <li>
         {/* <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a> */}
-        <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/about">About</Link>
+        {/* <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/about">About</Link> */}
       </li>
       <li>
       <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/database">MTG database</Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
       <Link className="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white" to="/about">Instagram Gallery</Link>
       </li>
       <li>
-        <a  class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+        <a  href="https://orlijan.github.io/react-task-tracker/" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-gray-600 dark:hover:text-white">Task-tracker</a>
       </li>
     </ul>
 </div>
@@ -36,6 +36,7 @@ const Navbar = () => {
             <a className="p-2" href="#aboutme">About me</a>
             <a className="p-2" href="#projects">Projects</a>
             {/* <Link className="navButton" to="/bulletjournal">Bullet journal</Link> */}
+            <a href={Pdf} target="_blank"> Resume</a>
             </div>
             </nav>
             

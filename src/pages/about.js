@@ -19,19 +19,25 @@ const About = () => {
     <>
       <body>
         <div className=" px-3 bg-ltan">
-          <div className="box"> <p className=""> Here is a gallery from my instagram with the help of the juicer.io api</p></div>
-        
-        <link
-          href="https://assets.juicer.io/embed.css"
-          media="all"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <ul class="juicer-feed" data-feed-id="leijanlegaspi">
-          <h1 class="referral">
-            <a href="https://www.juicer.io"></a>
-          </h1>
-        </ul>
+          <div className="box  m-auto">
+            
+            <p className=" italic text-center">
+              Here is a gallery from my instagram with the help of the juicer.io
+              api
+            </p>
+          </div>
+
+          <link
+            href="https://assets.juicer.io/embed.css"
+            media="all"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <ul class="juicer-feed" data-feed-id="leijanlegaspi">
+            <h1 class="referral">
+              <a href="https://www.juicer.io"></a>
+            </h1>
+          </ul>
         </div>
       </body>
     </>
